@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F27067"
-    android:paddingTop="50dp"
-    android:paddingStart="50dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <LinearLayout
         android:layout_width="wrap_content"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/soA"
@@ -39,10 +39,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="50dp"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/soB"
@@ -67,10 +67,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="50dp"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/tong2So"

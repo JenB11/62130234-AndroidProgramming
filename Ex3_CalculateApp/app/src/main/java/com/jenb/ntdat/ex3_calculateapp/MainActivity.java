@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Tim_Dieu_Khien();
         setContentView(R.layout.activity_main);
+        Tim_Dieu_Khien();
     }
 
     void Tim_Dieu_Khien(){
-        editTextA = findViewById(R.id.edtA);
-        editTextB = findViewById(R.id.edtB);
-        editTextKQ = findViewById(R.id.edtKQ);
+        editTextA = (EditText) findViewById(R.id.edtA);
+        editTextB = (EditText) findViewById(R.id.edtB);
+        editTextKQ = (EditText) findViewById(R.id.edtKQ);
 
     }
 

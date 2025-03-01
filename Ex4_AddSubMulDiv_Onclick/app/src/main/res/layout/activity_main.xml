@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/black">
+    android:background="#1D2125">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:hint="Nhập số ở đây"
             android:textSize="20dp"
+            android:inputType="number"
             android:textColor="@color/white" />
     </LinearLayout>
     <LinearLayout
@@ -53,24 +54,70 @@
             android:layout_height="wrap_content"
             android:hint="Nhập số ở đây"
             android:textSize="20dp"
+            android:inputType="number"
             android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:layout_marginTop="40dp">
 
         <Button
+            android:id="@+id/btnCong"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="+"
             android:textSize="20dp"
             android:backgroundTint="#24A19F"/>
-
+        <Button
+            android:id="@+id/btnTru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="-"
+            android:textSize="20dp"
+            android:backgroundTint="#24A19F"/>
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="*"
+            android:textSize="20dp"
+            android:backgroundTint="#24A19F"/>
+        <Button
+            android:id="@+id/btnChia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="/"
+            android:textSize="20dp"
+            android:backgroundTint="#24A19F"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/tvKetQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text="Kết quả:"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/edtKetQua"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:enabled="false"/>
+    </LinearLayout>
 
 </LinearLayout>
 

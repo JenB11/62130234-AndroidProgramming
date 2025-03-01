@@ -33,7 +33,7 @@
 
     <EditText
         android:id="@+id/edtA"
-        android:layout_width="wrap_content"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
@@ -44,7 +44,7 @@
 
     <EditText
         android:id="@+id/edtB"
-        android:layout_width="wrap_content"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="35dp"
@@ -52,4 +52,80 @@
         android:inputType="text"
         app:layout_constraintStart_toEndOf="@+id/tvB"
         app:layout_constraintTop_toBottomOf="@+id/edtA" />
+
+    <Button
+        android:id="@+id/btTru"
+        android:layout_width="60dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btNhan"
+        app:layout_constraintStart_toEndOf="@+id/btCong"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <Button
+        android:id="@+id/btNhan"
+        android:layout_width="60dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="*"
+        app:layout_constraintEnd_toStartOf="@+id/btChia"
+        app:layout_constraintStart_toEndOf="@+id/btTru"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <Button
+        android:id="@+id/btChia"
+        android:layout_width="60dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btNhan"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <Button
+        android:id="@+id/btCong"
+        android:layout_width="60dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="+"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btTru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="208dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvKetQua"
+        app:layout_constraintTop_toBottomOf="@+id/btCong" />
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:text="Kết Quả"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCong" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,18 +13,25 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText editTextA;
+    EditText editTextB;
+    EditText editTextKQ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        Tim_Dieu_Khien();
         setContentView(R.layout.activity_main);
     }
 
-    public void nutCong(View view){
-        EditText editTextA = findViewById(R.id.edtA);
-        EditText editTextB = findViewById(R.id.edtB);
-        EditText editTextKQ = findViewById(R.id.edtKQ);
+    void Tim_Dieu_Khien(){
+        editTextA = findViewById(R.id.edtA);
+        editTextB = findViewById(R.id.edtB);
+        editTextKQ = findViewById(R.id.edtKQ);
 
+    }
+
+    public void nutCong(View view){
         String strA = editTextA.getText().toString();
         String strB = editTextB.getText().toString();
 
@@ -40,10 +47,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nutTru(View view){
-        EditText editTextA = findViewById(R.id.edtA);
-        EditText editTextB = findViewById(R.id.edtB);
-        EditText editTextKQ = findViewById(R.id.edtKQ);
-
         String strA = editTextA.getText().toString();
         String strB = editTextB.getText().toString();
 
@@ -58,10 +61,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nutNhan(View view){
-        EditText editTextA = findViewById(R.id.edtA);
-        EditText editTextB = findViewById(R.id.edtB);
-        EditText editTextKQ = findViewById(R.id.edtKQ);
-
         String strA = editTextA.getText().toString();
         String strB = editTextB.getText().toString();
 
@@ -76,13 +75,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nutChia(View view){
-        EditText editTextA = findViewById(R.id.edtA);
-        EditText editTextB = findViewById(R.id.edtB);
-        EditText editTextKQ = findViewById(R.id.edtKQ);
-
         String strA = editTextA.getText().toString();
         String strB = editTextB.getText().toString();
-
 
         int soA = Integer.parseInt(strA);
         int soB = Integer.parseInt(strB);

@@ -9,25 +9,24 @@
     android:backgroundTint="#24292E"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvA"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="75dp"
-        android:text="a"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/tvA"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="56dp"
         android:text="b"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -36,28 +35,29 @@
         app:layout_constraintTop_toBottomOf="@+id/tvA" />
 
     <EditText
-        android:id="@+id/edtA"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:inputType="text"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/tvA"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/edtB"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/tvB"
         app:layout_constraintTop_toBottomOf="@+id/edtA" />
+
+    <TextView
+        android:id="@+id/tvA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="84dp"
+        android:text="a"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btTru"
@@ -124,12 +124,13 @@
         android:layout_width="208dp"
         android:layout_height="43dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="46dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
         app:layout_constraintStart_toEndOf="@+id/tvKetQua"
         app:layout_constraintTop_toBottomOf="@+id/btCong" />
 
@@ -137,8 +138,8 @@
         android:id="@+id/tvKetQua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
         android:text="Kết Quả"
         android:textAlignment="viewStart"
         android:textColor="@color/white"

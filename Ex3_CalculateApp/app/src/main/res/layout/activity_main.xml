@@ -5,8 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#24292E">
+    android:background="#24292E"
+    android:backgroundTint="#24292E"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvA"
@@ -15,6 +16,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="75dp"
         android:text="a"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,6 +29,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="55dp"
         android:text="b"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,6 +43,7 @@
         android:layout_marginTop="60dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/tvA"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,6 +55,7 @@
         android:layout_marginTop="35dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/tvB"
         app:layout_constraintTop_toBottomOf="@+id/edtA" />
 
@@ -61,7 +66,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
+        android:backgroundTint="#0372EF"
         android:text="-"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/btNhan"
         app:layout_constraintStart_toEndOf="@+id/btCong"
         app:layout_constraintTop_toBottomOf="@+id/edtB" />
@@ -73,7 +80,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
+        android:backgroundTint="#0372EF"
         android:text="*"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/btChia"
         app:layout_constraintStart_toEndOf="@+id/btTru"
         app:layout_constraintTop_toBottomOf="@+id/edtB" />
@@ -85,7 +94,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="28dp"
+        android:backgroundTint="#0372EF"
         android:text="/"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btNhan"
         app:layout_constraintTop_toBottomOf="@+id/edtB" />
@@ -97,14 +108,16 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
+        android:backgroundTint="#0372EF"
+        android:onClick="nutCong"
         android:text="+"
-        android:textSize="14sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/btTru"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtB" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/edtKQ"
         android:layout_width="208dp"
         android:layout_height="43dp"
         android:layout_marginStart="5dp"
@@ -112,6 +125,7 @@
         android:layout_marginEnd="46dp"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvKetQua"
         app:layout_constraintTop_toBottomOf="@+id/btCong" />
@@ -124,6 +138,7 @@
         android:layout_marginTop="50dp"
         android:text="Kết Quả"
         android:textAlignment="viewStart"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

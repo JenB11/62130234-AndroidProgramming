@@ -7,12 +7,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#1D2125">
+    android:background="#505150">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="80dp">
 
         <TextView
             android:id="@+id/tvA"
@@ -28,9 +28,11 @@
             android:id="@+id/edtA"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:hint="Nhập số ở đây"
             android:textSize="20dp"
             android:inputType="number"
+            android:textAlignment="center"
             android:textColor="@color/white" />
     </LinearLayout>
     <LinearLayout
@@ -52,8 +54,10 @@
             android:id="@+id/edtB"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:hint="Nhập số ở đây"
             android:textSize="20dp"
+            android:textAlignment="center"
             android:inputType="number"
             android:textColor="@color/white" />
     </LinearLayout>
@@ -70,7 +74,8 @@
             android:layout_marginLeft="20dp"
             android:text="+"
             android:textSize="20dp"
-            android:backgroundTint="#24A19F"/>
+            android:backgroundTint="#1D2125"
+            android:onClick="xuLyCong"/>
         <Button
             android:id="@+id/btnTru"
             android:layout_width="wrap_content"
@@ -78,7 +83,8 @@
             android:layout_marginLeft="20dp"
             android:text="-"
             android:textSize="20dp"
-            android:backgroundTint="#24A19F"/>
+            android:backgroundTint="#1D2125"
+            android:onClick="xuLyTru"/>
         <Button
             android:id="@+id/btnNhan"
             android:layout_width="wrap_content"
@@ -86,7 +92,8 @@
             android:layout_marginLeft="20dp"
             android:text="*"
             android:textSize="20dp"
-            android:backgroundTint="#24A19F"/>
+            android:backgroundTint="#1D2125"
+            android:onClick="xuLyNhan"/>
         <Button
             android:id="@+id/btnChia"
             android:layout_width="wrap_content"
@@ -94,7 +101,8 @@
             android:layout_marginLeft="20dp"
             android:text="/"
             android:textSize="20dp"
-            android:backgroundTint="#24A19F"/>
+            android:backgroundTint="#1D2125"
+            android:onClick="xuLyChia"/>
     </LinearLayout>
 
     <LinearLayout
@@ -114,9 +122,11 @@
             android:id="@+id/edtKetQua"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:textSize="20dp"
             android:textColor="@color/white"
-            android:enabled="false"/>
+            android:enabled="false"
+            android:textAlignment="center"/>
     </LinearLayout>
 
 </LinearLayout>

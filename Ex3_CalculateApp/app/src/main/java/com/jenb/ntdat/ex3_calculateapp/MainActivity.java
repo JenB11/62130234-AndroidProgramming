@@ -24,7 +24,18 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextA = findViewById(R.id.edtA);
         EditText editTextB = findViewById(R.id.edtB);
         EditText editTextKQ = findViewById(R.id.edtKQ);
-        
+
+        String strA = editTextA.getText().toString();
+        String strB = editTextB.getText().toString();
+
+        int soA = Integer.parseInt(strA);
+        int soB = Integer.parseInt(strB);
+
+        int Tong = soA + soB;
+
+        String strKQ = String.valueOf(Tong);
+
+        editTextKQ.setText(strKQ);
 
     }
 

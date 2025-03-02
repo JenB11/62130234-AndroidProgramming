@@ -1,6 +1,8 @@
 package com.jenb.ntdat.bmicalculator;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -11,8 +13,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    TextView tvKG, tvCM;
+    TextView tvKG, tvCM, tvBMI;
     SeekBar sbWeight, sbHeight;
+
+    float inBMI;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,13 +31,32 @@ public class MainActivity extends AppCompatActivity {
         sbWeight = findViewById(R.id.sbWeight);
         tvCM = findViewById(R.id.tvCM);
         sbHeight = findViewById(R.id.sbHeight);
+        tvBMI = findViewById(R.id.tvResult);
+    }
+
+    public void CalculateBMI(View view){
+
+
+        inBMI = Float.parseFloat(tvKG.getText().toString()) / (Float.parseFloat(tvCM.getText().toString()) / 100 * Float.parseFloat(tvCM.getText().toString()) / 100);
+
+        if (inBMI < 18.5){
+            tvBMI.setText("Underweight");
+        } else if (inBMI < 22.9){
+            tvBMI.setText("Normal");
+        } else if (inBMI >= 23 && inBMI <= 24.9){
+            tvBMI.setText("Overweight");
+        } else if (inBMI >= 25 && inBMI <= 29.9){
+            tvBMI.setText("Obese");
+        } else if (inBMI >= 30){
+            tvBMI.setText("Extremely Obese");
+        }
     }
 
     public void init(){
         sbWeight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                tvKG.setText(i + "KG");
+                tvKG.setText(i + "");
             }
 
             @Override
@@ -49,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         sbHeight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                tvCM.setText(i + "CM");
+                tvCM.setText(i + "");
             }
 
             @Override

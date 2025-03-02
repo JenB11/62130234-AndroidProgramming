@@ -55,13 +55,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <TextView
-        android:id="@+id/tvKG"
-        android:layout_width="150dp"
+        android:id="@+id/tvW"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="116dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/roundcorner1"
-        android:text="0KG"
+        android:background="@color/black"
+        android:text="KG"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="40dp"
@@ -95,14 +95,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sbWeight" />
 
+
+    <TextView
+        android:id="@+id/tvH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/black"
+        android:text="CM"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintStart_toEndOf="@+id/tvCM"
+        app:layout_constraintTop_toBottomOf="@+id/sbWeight" />
+
     <TextView
         android:id="@+id/tvCM"
-        android:layout_width="150dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/roundcorner1"
-        android:text="0CM"
+        android:background="@color/black"
+        android:text=""
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="40dp"
@@ -129,6 +143,7 @@
         android:layout_marginStart="104dp"
         android:layout_marginTop="48dp"
         android:backgroundTint="#062AF6"
+        android:onClick="CalculateBMI"
         android:text="Calculate BMI"
         android:textColor="@color/white"
         android:textSize="30dp"
@@ -143,11 +158,25 @@
         android:layout_marginTop="52dp"
         android:background="@drawable/roundcorner2"
         android:text="RESULT"
-        android:textColor="#CCC3C3"
         android:textAlignment="center"
+        android:textColor="#CCC3C3"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sbHeight" />
 
+    <TextView
+        android:id="@+id/tvKG"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/black"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvW"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvWeight"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,13 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/black">
+    android:background="#020A2C">
 
     <LinearLayout
+        android:id="@+id/values"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/background2">
         
         <LinearLayout
@@ -21,14 +23,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/km"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -39,11 +42,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Kilometre"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -57,14 +60,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/m"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -75,11 +79,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Metre"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -93,14 +97,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/cm"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -111,11 +116,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Centimetre"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -129,14 +134,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/mm"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -147,11 +153,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Millimetre"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -165,14 +171,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/micro"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -183,11 +190,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Micrometre"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -201,14 +208,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/nm"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -219,11 +227,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Nanometre"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -237,14 +245,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/mile"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -255,11 +264,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Mile"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -273,14 +282,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/yard"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -291,11 +301,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Yard"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -309,14 +319,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/foot"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -327,11 +338,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Foot"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
@@ -345,14 +356,15 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/inch"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingVertical="15dp"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="1dp"
@@ -363,11 +375,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="00"
+                android:paddingVertical="15dp"
+                android:text="Inch"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:paddingVertical="15dp"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
 
@@ -375,6 +387,44 @@
 
 
         
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@+id/values"
+        android:gravity="center"
+        android:paddingVertical="50dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:inputType="numberDecimal"
+                android:layout_marginRight="10dp" />
+            
+            <Spinner
+                android:id="@+id/unit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:padding="15dp"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>

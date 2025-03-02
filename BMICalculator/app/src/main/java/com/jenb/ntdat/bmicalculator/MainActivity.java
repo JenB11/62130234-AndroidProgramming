@@ -3,6 +3,7 @@ package com.jenb.ntdat.bmicalculator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -15,7 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     TextView tvKG, tvCM, tvBMI;
     SeekBar sbWeight, sbHeight;
-
+    ImageButton imbtMale, imbtFemale;
+    boolean isSelected = false;
     float inBMI;
 
     @Override
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Tim_Dieu_khien();
         init();
+        init2();
     }
 
     public void Tim_Dieu_khien(){
@@ -32,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
         tvCM = findViewById(R.id.tvCM);
         sbHeight = findViewById(R.id.sbHeight);
         tvBMI = findViewById(R.id.tvResult);
+        imbtMale = findViewById(R.id.imgMale);
+        imbtFemale = findViewById(R.id.imgFemale);
     }
 
     public void CalculateBMI(View view){
-
-
         inBMI = Float.parseFloat(tvKG.getText().toString()) / (Float.parseFloat(tvCM.getText().toString()) / 100 * Float.parseFloat(tvCM.getText().toString()) / 100);
 
         if (inBMI < 18.5){
@@ -52,7 +55,34 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void init2() {
+        imbtMale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isSelected == true){
+                    imbtMale.setImageResource(R.drawable.tick);
+                }else {
+                    imbtMale.setImageResource(R.drawable.male);
+                }
+                isSelected = !isSelected;
+            }
+        });
+
+        imbtFemale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isSelected == true){
+                    imbtFemale.setImageResource(R.drawable.tick);
+                }
+                else {
+                    imbtFemale.setImageResource(R.drawable.femenine);
+                }
+                isSelected = !isSelected;
+            }
+        });
+    }
     public void init(){
+
         sbWeight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {

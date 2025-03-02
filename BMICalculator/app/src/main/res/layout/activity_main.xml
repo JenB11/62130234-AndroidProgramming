@@ -5,21 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:background="@color/black"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="65dp"
-        android:scaleType="centerInside"
         android:background="@drawable/roundcorner"
-        android:src="@drawable/femenine"
         android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/femenine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
@@ -27,18 +27,57 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:padding="10dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="50dp"
-        android:scaleType="centerInside"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="25dp"
         android:background="@drawable/roundcorner"
+        android:padding="10dp"
+        android:scaleType="centerInside"
         android:src="@drawable/male"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundcorner1"
+        android:text="Weigth"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:background="@drawable/roundcorner1"
+        android:text="0 KG"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintStart_toEndOf="@+id/tvWeight"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <SeekBar
+        android:id="@+id/sbWeight"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:progressDrawable="@drawable/custom_seekbar"
+        android:scaleType="centerInside"
+        android:thumb="@drawable/seekbar_thumb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeight" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,6 +30,7 @@
             android:textSize="20dp"
             android:textStyle="bold" />
         <Spinner
+            android:id="@+id/spHinh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/background3"
@@ -46,6 +47,7 @@
         android:background="@drawable/background2">
 
         <ImageView
+            android:id="@+id/imgHinh"
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:scaleType="centerInside"
@@ -54,6 +56,7 @@
             android:background="@drawable/roundcorner"/>
 
         <TextView
+            android:id="@+id/tvResult"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textAlignment="center"
@@ -86,6 +89,7 @@
             android:textSize="20dp"
             android:textStyle="bold" />
         <Spinner
+            android:id="@+id/spDonvi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/background3"
@@ -99,14 +103,151 @@
         android:layout_height="230dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/background2"
-        android:orientation="vertical"
         android:layout_below="@+id/layout3"
         android:paddingLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
         android:paddingRight="10dp">
 
-        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edt1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="@drawable/background2"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvDonvi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edt2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="@drawable/background2"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvDonvi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edt3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="@drawable/background2"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvDonvi3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edt4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="@drawable/background2"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvDonvi4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/layout4">
 
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Calculation Result"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+    </LinearLayout>
 </RelativeLayout>

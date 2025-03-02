@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvKG, tvCM, tvBMI;
     SeekBar sbWeight, sbHeight;
     ImageButton imbtMale, imbtFemale;
+    ImageView imgKQ;
     boolean isSelected = false;
     float inBMI;
 
@@ -37,21 +39,30 @@ public class MainActivity extends AppCompatActivity {
         tvBMI = findViewById(R.id.tvResult);
         imbtMale = findViewById(R.id.imgMale);
         imbtFemale = findViewById(R.id.imgFemale);
+        imgKQ = findViewById(R.id.imgKQ);
     }
 
     public void CalculateBMI(View view){
         inBMI = Float.parseFloat(tvKG.getText().toString()) / (Float.parseFloat(tvCM.getText().toString()) / 100 * Float.parseFloat(tvCM.getText().toString()) / 100);
-
+        String result = String.format("%.2f", inBMI);
         if (inBMI < 18.5){
-            tvBMI.setText("Underweight");
+            tvBMI.setText( result + "\nUnderweight");
+            tvBMI.setTextColor( getResources().getColor(R.color.red));
+            imgKQ.setImageResource(R.drawable.delete);
         } else if (inBMI < 22.9){
-            tvBMI.setText("Normal");
+            tvBMI.setText(result + "\nNormal");
+            imgKQ.setImageResource(R.drawable.check);
         } else if (inBMI >= 23 && inBMI <= 24.9){
-            tvBMI.setText("Overweight");
+            tvBMI.setText(result + "\nOverweight");
+            imgKQ.setImageResource(R.drawable.check);
         } else if (inBMI >= 25 && inBMI <= 29.9){
-            tvBMI.setText("Obese");
+            tvBMI.setText(result + "\nObese");
+            tvBMI.setTextColor( getResources().getColor(R.color.red));
+            imgKQ.setImageResource(R.drawable.delete);
         } else if (inBMI >= 30){
-            tvBMI.setText("Extremely Obese");
+            tvBMI.setText(result + "\nExtremely Obese");
+            tvBMI.setTextColor( getResources().getColor(R.color.red));
+            imgKQ.setImageResource(R.drawable.delete);
         }
     }
 

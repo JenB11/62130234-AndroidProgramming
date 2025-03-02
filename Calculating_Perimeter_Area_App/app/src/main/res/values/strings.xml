@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Calculating_Perimeter_Area_App</string>
+    <string name="radius" />
 </resources>

@@ -28,6 +28,14 @@
 
 ###
 
+<p align="left">✨ Ex1_Hello</p>
+
+###
+
+<p align="left">✨ Ex2_LinearLayout</p>
+
+###
+
 <p align="left">✨ Ex3_CalculateApp</p>
 
 ###

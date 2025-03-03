@@ -14,7 +14,7 @@
 
 ###
 
-<p align="left">✨ Ex3_CalculateApp<br>✨ Ex4_AddSubMulDiv_Onclick<br>✨ BMICalculator<br>✨ Unit_Converter_App<br>✨ Calculating_Perimeter_Area_App</p>
+<p align="left">✨Ex1_Hello<br>✨Ex2_LinearLayout<br>✨ Ex3_CalculateApp<br>✨ Ex4_AddSubMulDiv_Onclick<br>✨ BMICalculator<br>✨ Unit_Converter_App<br>✨ Calculating_Perimeter_Area_App</p>
 
 ###
 
@@ -25,14 +25,6 @@
 ###
 
 <h2 align="left">Result!!</h2>
-
-###
-
-<p align="left">✨ Ex1_Hello</p>
-
-###
-
-<p align="left">✨ Ex2_LinearLayout</p>
 
 ###
 

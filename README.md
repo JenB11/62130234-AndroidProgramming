@@ -48,6 +48,16 @@
 
 ###
 
+<p align="left">✨ Ex5_AddSubMulDiv_Var</p>
+
+###
+
+<div align="center">
+  <img height="500" src="https://github.com/user-attachments/assets/24870884-de90-4fc7-9cde-95f5e201a9fb"  />
+</div>
+
+###
+
 <p align="left">✨ BMICalculator</p>
 
 ###

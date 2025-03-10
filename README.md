@@ -14,7 +14,7 @@
 
 ###
 
-<p align="left">✨ Ex1_Hello<br>✨ Ex2_LinearLayout<br>✨ Ex3_CalculateApp<br>✨ Ex4_AddSubMulDiv_Onclick<br>✨ Ex5_AddSubMulDiv_Anynomous<br>✨ Ex5_AddSubMulDiv_Var<br>✨ Ex6_IntentDonGian<br>✨ 	Ex7_IntentLogin<br>✨ BMICalculator<br>✨ Unit_Converter_App<br>✨ Calculating_Perimeter_Area_App</p>
+<p align="left">✨ Ex1_Hello<br>✨ Ex2_LinearLayout<br>✨ Ex3_CalculateApp<br>✨ Ex4_AddSubMulDiv_Onclick<br>✨ Ex5_AddSubMulDiv_Anynomous<br>✨ Ex5_AddSubMulDiv_Var<br>✨ Ex6_IntentDonGian<br>✨ 	Ex7_IntentLogin<br>✨ BMICalculator<br>✨ Unit_Converter_App<br>✨ Calculating_Perimeter_Area_App<br>✨ Calculation_check_App</p>
 
 ###
 
@@ -118,6 +118,20 @@
 
 <div align="center">
   <img height="500" src="https://github.com/user-attachments/assets/fbc423a3-a51a-4f5c-b139-d9c7457f481d"  />
+</div>
+
+###
+
+<p align="left">✨ Calculation_check_App</p>
+
+###
+
+<div align="center">
+  <img height="500" src="https://github.com/user-attachments/assets/ee6c4f67-b602-4ff9-ad1e-fdb3a72441fa"  />
+  <img height="500" src="https://github.com/user-attachments/assets/810cd291-9e43-4f93-a849-4181e5b9282c"  />
+  <img height="500" src="https://github.com/user-attachments/assets/bd89c9df-984a-4707-9182-5eb53a674801"  />
+  <img height="500" src="https://github.com/user-attachments/assets/3d861156-e1d7-4c42-a460-4376002fe42a"  />
+  <img height="500" src="https://github.com/user-attachments/assets/b4a18057-232b-48f8-b5ed-75cb37767842"  />
 </div>
 
 ###

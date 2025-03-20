@@ -14,7 +14,7 @@
 
 ###
 
-<p align="left">✨ Ex1_Hello<br>✨ Ex2_LinearLayout<br>✨ Ex3_CalculateApp<br>✨ Ex4_AddSubMulDiv_Onclick<br>✨ Ex5_AddSubMulDiv_Anynomous<br>✨ Ex5_AddSubMulDiv_Var<br>✨ Ex6_IntentDonGian<br>✨ 	Ex7_IntentLogin<br>✨ BMICalculator<br>✨ Unit_Converter_App<br>✨ Calculating_Perimeter_Area_App<br>✨ Calculation_check_App<br>✨ LoginPage<br>✨ Modern_Material_Dashboard</p>
+<p align="left">✨ Ex1_Hello<br>✨ Ex2_LinearLayout<br>✨ Ex3_CalculateApp<br>✨ Ex4_AddSubMulDiv_Onclick<br>✨ Ex5_AddSubMulDiv_Anynomous<br>✨ Ex5_AddSubMulDiv_Var<br>✨ Ex6_IntentDonGian<br>✨ 	Ex7_IntentLogin<br>✨ BMICalculator<br>✨ Unit_Converter_App<br>✨ Calculating_Perimeter_Area_App<br>✨ Calculation_check_App<br>✨ LoginPage<br>✨ Modern_Material_Dashboard<br>✨ Kids_Corner_Figma</p>
 
 ###
 
@@ -153,6 +153,17 @@
 
 <div align="center">
   <img height="500" src="https://github.com/user-attachments/assets/e37fd83b-0b15-4c1e-90b3-c9986073102c"  />
+</div>
+
+###
+
+<p align="left">✨ Kids_Corner_Figma</p>
+
+###
+
+<div align="center">
+  <img height="500" src="https://github.com/user-attachments/assets/98aadeb4-a9d1-4b36-adef-38f15a6757db"  />
+  <img height="500" src="https://github.com/user-attachments/assets/48faafbb-6c0d-4675-8ccb-607e15f7ecf1"  />
 </div>
 
 ###

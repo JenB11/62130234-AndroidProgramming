@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangNhap">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Chào mừng bạn👋"
+        android:textColor="#020202"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="390dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="40dp"
+        android:text="Vui lòng nhập Tài khoản/Email và Mật khẩu để đăng nhập vào ứng dụng"
+        android:textColor="#040404"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edtUseName"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/name"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Usename"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColorHint="#4052B1"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Mật khẩu"
+        android:textColor="#040404"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUseName" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColorHint="#4052B1"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Tài khoản/Email"
+        android:textColor="#040404"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <RadioButton
+        android:id="@+id/btnGhiNho"
+        android:layout_width="182dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Ghi nhớ mật khẩu"
+        android:textColor="#070707"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <Button
+        android:id="@+id/btnDangNhap1"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_btn"
+        android:text="Đăng Nhập"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGhiNho" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

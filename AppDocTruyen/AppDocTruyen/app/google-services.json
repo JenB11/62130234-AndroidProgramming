@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "574664111710",
+    "project_id": "datatruyen-fd518",
+    "storage_bucket": "datatruyen-fd518.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574664111710:android:539f6c0072f30503b126cf",
+        "android_client_info": {
+          "package_name": "com.jenb.ntdat.appdoctruyen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp66qApd28g6e8kjFYBlo2zC67KvvI8ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
